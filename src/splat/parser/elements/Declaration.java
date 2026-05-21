@@ -1,0 +1,15 @@
+package splat.parser.elements;
+
+import splat.lexer.Token;
+import splat.semanticanalyzer.SemanticAnalysisException;
+
+import java.util.Map;
+
+public abstract class Declaration extends ASTElement {
+
+	public Declaration(Token tok) {
+		super(tok);
+	}
+
+    public abstract String getLabel();
+}
